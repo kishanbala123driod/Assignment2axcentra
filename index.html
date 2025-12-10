@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Week 2 — Interactive Gallery & Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <h1>Interactive Gallery</h1>
+      <p class="subtitle">Hover effects + lightbox</p>
+    </div>
+    <div class="clock" id="clock">--:--:--</div>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery-grid" id="gallery">
+        <!-- 6 sample images (use your own images or these placeholders) -->
+        <img src="https://picsum.photos/id/1015/600/400" alt="img1" class="gallery-item" />
+        <img src="https://picsum.photos/id/1016/600/400" alt="img2" class="gallery-item" />
+        <img src="https://picsum.photos/id/1025/600/400" alt="img3" class="gallery-item" />
+        <img src="https://picsum.photos/id/1035/600/400" alt="img4" class="gallery-item" />
+        <img src="https://picsum.photos/id/1044/600/400" alt="img5" class="gallery-item" />
+        <img src="https://picsum.photos/id/1041/600/400" alt="img6" class="gallery-item" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <button id="closeBtn" class="lb-close" aria-label="Close">✕</button>
+    <img id="lightboxImage" src="" alt="expanded" />
+    <div id="caption" class="lb-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
